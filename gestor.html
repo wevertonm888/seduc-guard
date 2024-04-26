@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUARD</title>
+  <link rel="stylesheet" href="./assets/css/menu.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="conteiner__conteudo">
+      <div class="conteudo">
+        <h2 class="conteiner__titulo">
+          Menu
+        </h2>
+
+        <!-- modal -->
+        <div id="meuModal" class="modal">
+          <div class="modal__conteudo">
+            <div class="modal__textos">
+              <span class="titulo">
+                Deseja acionar o alerta vermelho?
+              </span>
+              <span class="descricao">
+                O aplicativo irá acionar todas autoridades próximas de você.
+              </span>
+
+              <div class="botoes__modal">
+                <span class="botoes" onclick="alerta()">SIM</span>
+                <span class="botoes cancelar" id="fechar">NÃO</span>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- menu -->
+        <div class="conteudo__botoes">
+          <div class="botao botao__conteiner" onclick="denuncias()">
+            <img src="./assets/img/denucias.png" class="botao__conteiner__img" alt="">
+            <span class="botao__conteiner__texto">Denuncias</span>
+          </div>
+
+          <div class="botao botao__conteiner" onclick="contatos()">
+            <img src="./assets/img/contato.png" class="botao__conteiner__img contato" alt="">
+            <span class="botao__conteiner__texto">Contatos</span>
+          </div>
+
+          <div class="botao botao__conteiner__texto__alerta" id="botaoAlertaVermelho">
+            <img src="./assets/img/alerta_vermelho.png" class="botao__conteiner__img" alt="">
+            <span class="botao__conteiner__texto">Alerta Vermelho</span>
+          </div>
+
+          <div class="botao botao__conteiner__sair" onclick="logout()">
+            <img src="./assets/img/sair.png" class="botao__conteiner__img" alt="">
+            <span class="botao__conteiner__texto__sair">Sair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/gestor.js"></script>
+  <script src="./assets/js/logout.js"></script>
+  <script>
+    var modal = document.getElementById('meuModal')
+    var btn = document.getElementById('botaoAlertaVermelho')
+    var span = document.getElementById('fechar')
+
+    // observa o click alerta vermelho
+    btn.onclick = function () {
+      modal.style.display = 'block'
+    }
+
+    // // observa o click no não
+    span.onclick = function () {
+      modal.style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>

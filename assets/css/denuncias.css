@@ -1,0 +1,83 @@
+@import url('./variaveis.css');
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner__titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--preto-texto);
+  font-weight: 600;
+}
+
+.conteudo__denuncias {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulos,
+.denuncias {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo,
+.descricao {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--preto-texto);
+  text-align: center;
+}
+
+.conteudo__denuncias__lista {
+  margin-top: 6px;
+  height: 650px;
+  overflow: auto;
+}
+
+.denuncias {
+  height: 3rem;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+.descricao {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--preto-texto);
+}
+
+.denuncia_fundo__branco {
+  background-color: #fff;
+}
+.denuncia_fundo__cinza {
+  background-color: var(--cinza-background);
+}
+
+.status_aberto {
+  color: var(--laranja);
+}
+
+.status_resolvido {
+  color: var(--verde);
+}
+
+.voltar {
+  margin-top: 15px;
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: var(--cinza-background);
+  color: var(--azul-botao);
+  border: 1px var(--azul-borda) solid;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,87 @@
+@import url('./variaveis.css');
+
+conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--preto-texto);
+  font-weight: 600;
+}
+
+.nome__status {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+  margin-top: 20px;
+}
+
+.nome__status span {
+  color: var(--preto-texto);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* escolas */
+.conteudo__escolas {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.texto {
+  color: var(--preto-texto);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* lista de escolas */
+.conteudo__lista__escolas {
+  height: 650px;
+  overflow: auto;
+}
+
+.escolas {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.escola {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* status seguro */
+.status__seguro {
+  color: var(--verde);
+}
+/* status alerta vermelho */
+.status__alerta {
+  color: #fff;
+  background-color: var(--vermelho);
+}
+
+.sair {
+  margin-top: 15px;
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--azul-botao);
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

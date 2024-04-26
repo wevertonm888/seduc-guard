@@ -1,0 +1,67 @@
+@import url('./variaveis.css');
+
+conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--preto-texto);
+  font-weight: 600;
+}
+
+.conteudo__detalhe {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.escola__contato,
+.escola__endereco {
+  display: flex;
+}
+
+.escola__detalhe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+.texto {
+  color: var(--preto-texto);
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+.descricao {
+  font-weight: 500;
+}
+
+.seguro {
+  color: var(--verde);
+}
+
+.alerta__vermelho {
+  color: var(--vermelho);
+}
+
+.botao__voltar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botoes {
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--azul-botao);
+  color: #fff;
+  margin-top: 20px;
+}

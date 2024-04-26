@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUARD</title>
+  <link rel="stylesheet" href="./assets/css/aluno_denuncia.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="conteiner__conteudo">
+      <div class="conteudo">
+        <h2 class="conteiner__titulo">
+          O que deseja denunciar?
+        </h2>
+
+        <div class="conteudo__botoes">
+          <div class="botao__conteiner" onclick="criaDenuncia('Bullying')">
+            <img src="./assets//img/bullying.png" alt="">
+            <span class="botao__conteiner__texto">Bullying</span>
+          </div>
+
+          <div class="botao__conteiner" onclick="criaDenuncia('Assédio')">
+            <img src="./assets//img/assedio.png" alt="">
+            <span class="botao__conteiner__texto">Assédio</span>
+          </div>
+
+          <div class="botao__conteiner" onclick="criaDenuncia('Agressão')">
+            <img src="./assets//img/agressao.png" alt="">
+            <span class="botao__conteiner__texto">Agressão</span>
+          </div>
+
+          <div class="botao__conteiner" onclick="criaDenuncia('Vandalismo')">
+            <img src="./assets//img/vandalismo.png" alt="">
+            <span class="botao__conteiner__texto">Vandalismo</span>
+          </div>
+
+          <div class="botao__conteiner" onclick="criaDenuncia('Outros')">
+            <img src="./assets//img/outros.png" alt="">
+            <span class="botao__conteiner__texto">Outros</span>
+          </div>
+
+          <div class="botao__conteiner__sair" onclick="logout()">
+            <img src="./assets/img/sair.png" class="botao__conteiner__img" alt="">
+            <span class="botao__conteiner__texto__sair">Sair</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/logout.js"></script>
+  <script src="./assets/js/criarDenuncia.js"></script>
+</body>
+
+</html>

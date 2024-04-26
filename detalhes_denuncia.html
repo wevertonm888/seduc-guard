@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUARD</title>
+  <link rel="stylesheet" href="./assets/css/detalhes_denuncia.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <!-- conteudo -->
+    <div class="conteiner__conteudo">
+      <div class="conteudo">
+        <h2 class="conteiner__titulo">
+          Denúncia
+        </h2>
+
+        <div class="conteudo__resumo">
+          <!-- informações -->
+          <div class="resumo__info">
+            <div class="resumo">
+              <span class="texto">
+                Aluno
+              </span>
+              <span class="descricao" id="nome">
+               
+              </span>
+            </div>
+
+            <div class="resumo">
+              <span class="texto">
+                Tipo de denuncia
+              </span>
+              <span class="descricao" id="tipo">
+              
+              </span>
+            </div>
+          </div>
+          <!-- local -->
+          <div class="resumo">
+            <span class="texto">
+              Local do ocorrido
+            </span>
+            <span class="descricao" id="local">
+              
+            </span>
+          </div>
+
+          <!-- data e hora -->
+          <div class="resumo__data__hora">
+            <div class="resumo data__hora">
+              <span class="texto">
+                Dia
+              </span>
+              <span class="descricao" id="data">
+                
+              </span>
+            </div>
+
+            <div class="resumo data__hora">
+              <span class="texto">
+                Horário
+              </span>
+              <span class="descricao" id="hora">
+                
+              </span>
+            </div>
+          </div>
+          <!-- descricao da denuncia -->
+          <div class="resumo">
+            <span class="texto">
+              Descrição do ocorrido
+            </span>
+            <div name="" class="resumo__area__texto" id="descricao">
+              
+            </div>
+          </div>
+
+          <!-- <div class="resumo">
+            <span class="texto">
+              Mídia
+            </span>
+            <div class="resumo__imagens">
+              <div class="imagem">
+                <img src="./assets/img/imagem.png" alt="">
+              </div>
+            </div>
+          </div> -->
+
+          <div class="resumo__botoes">
+            <button class="botoes encerrar" onclick="encerrarDenuncia()" id="encerrar">
+              Encerrar
+            </button>
+            <button class="botoes voltar" onclick="voltar()">
+              Voltar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/detalhesDenuncia.js"></script>
+</body>
+
+</html>

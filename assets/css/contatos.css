@@ -1,0 +1,83 @@
+@import url('./variaveis.css');
+
+conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--preto-texto);
+  font-weight: 600;
+}
+
+.nome__status {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+}
+/* escolas */
+.conteudo__contato {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nome__status span {
+  color: var(--preto-texto);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.texto {
+  color: var(--preto-texto);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* lista de escolas */
+
+.conteudo__lista__contato {
+  overflow: auto;
+  height: 650px;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contato {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+.contato_fundo__branco {
+  background-color: #fff;
+}
+.contato_fundo__cinza {
+  background-color: var(--cinza-background);
+}
+
+.voltar {
+  margin-top: 15px;
+  height: 3rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: var(--azul-botao);
+  color: #fff;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

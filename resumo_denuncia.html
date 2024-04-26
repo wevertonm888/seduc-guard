@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUARD</title>
+  <link rel="stylesheet" href="./assets/css/resumo_denuncia.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <!-- mensagem de sucesso ao confirmar denuncia -->
+    <div class="denucia__sucesso" id="denunciaSucesso">
+      <span class="denuncia__texto">
+        Denúncia enviada com sucesso
+      </span>
+      <img src="./assets/img/sucesso.png" alt="Sucesso">
+    </div>
+    <!-- conteudo -->
+    <div class="conteiner__conteudo" id="conteinerConteudo">
+      <div class="conteudo">
+        <h2 class="conteiner__titulo">
+          Resumo da denúncia
+        </h2>
+
+        <div class="conteudo__resumo">
+          <!-- local -->
+          <div class="resumo">
+            <span class="texto">
+              Local do ocorrido
+            </span>
+            <span class="descricao" id="localOcorrido">
+              
+            </span>
+          </div>
+          <!-- data e hora -->
+          <div class="resumo__data__hora">
+            <div class="resumo data__hora">
+              <span class="texto">
+                Dia
+              </span>
+              <span class="descricao" id="data">
+                
+              </span>
+            </div>
+
+            <div class="resumo data__hora">
+              <span class="texto">
+                Hora
+              </span>
+              <span class="descricao" id="hora">
+                
+              </span>
+            </div>
+          </div>
+          <!-- descricao da denuncia -->
+          <div class="resumo">
+            <span class="texto">
+              Descrição do ocorrido
+            </span>
+            <div id="descricao" class="resumo__area__texto">
+            </div>
+          </div>
+
+          <!-- <div class="resumo">
+            <span class="texto">
+              Mídia(opcional)
+            </span>
+            <div class="resumo__imagens">
+              <div class="imagem">
+                <img src="./assets/img/imagem.png" alt="">
+              </div>
+            </div>
+          </div> -->
+
+          <div class="resumo__anonimo">
+            <span class="resumo__anonimo__texto">Denunciar como anônimo</span>
+          
+            <label class="resumo__anonimo__botao">
+              <input type="checkbox" id="anonimo">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="resumo__botoes">
+            <button class="botoes proximo" onclick="denunciar()">
+              Denunciar
+            </button>
+            <button class="botoes cancelar" onclick="cancelarDenuncia()">
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/resumoDenuncia.js"></script>
+  <script src="./assets/js/cancelarDenuncia.js"></script>
+</body>
+
+</html>

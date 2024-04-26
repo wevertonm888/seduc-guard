@@ -1,0 +1,135 @@
+@import url('./variaveis.css');
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner__titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--preto-texto);
+  font-weight: 600;
+}
+
+.conteudo__botoes {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.botao {
+  height: 10rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.botao__conteiner {
+  background-color: var(--azul-botao);
+}
+
+.botao__conteiner__texto {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.botao__conteiner__sair {
+  background-color: #fff;
+  border: 1px var(--azul-botao) solid;
+}
+
+.botao__conteiner__texto__alerta {
+  background-color: var(--vermelho);
+  cursor: pointer;
+}
+
+.botao__conteiner__texto__sair {
+  color: var(--azul-botao);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.botao__conteiner__img {
+  height: 60px;
+}
+
+/* modal */
+.modal {
+  max-width: 540px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal__conteudo {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 12px;
+}
+
+.modal__textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--preto-texto);
+}
+
+.descricao {
+  width: 80%;
+  text-align: center;
+}
+
+.botoes__modal {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.botoes {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.cancelar {
+  color: var(--vermelho);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

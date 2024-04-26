@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUARD</title>
+  <link rel="stylesheet" href="./assets/css/formulario_denuncia.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="conteiner__conteudo">
+      <div class="conteudo">
+        <h2 class="conteiner__titulo">
+          Formulário de denúncia
+        </h2>
+
+        <div class="conteudo__formulario">
+          <input type="text" class="campo" id="local" placeholder="Local do ocorrido">
+
+          <div class="formulario__datas">
+            <input type="date" class="campo" name="formulario_data" id="data">
+            <input type="time" class="campo"  name="formulario_hora" id="hora">
+          </div>
+
+          <textarea id="descricao" class="campo formulario__area__texto" placeholder="Descrição do ocorrido"></textarea>
+
+          <!-- <div class="formulario__imagem">
+            <span class="texto__opcional">
+              Mídia(opcional)
+            </span>
+
+            <div>
+              <div class="upload__imagem">
+                <label for="upload_imagem" class="upload__imagem__label">
+                  <input type="image" class="upload__imagem__campo" src="./assets/img/enviar_imagem.png" alt="Enviar">
+                </label>
+                <input hidden type="file" multiple name="upload_imagem" id="upload_imagem">
+              </div>
+
+            </div>
+          </div> -->
+
+          <div class="formulario__anonimo">
+            <span class="formulario__anonimo__texto">Denunciar como anônimo</span>
+            
+            <label class="formulario__anonimo__botao">
+              <input type="checkbox" id="anonimo" value="anonimo">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="formulario__botoes">
+            <button class="botoes proximo" onclick="formulario()">
+              Próximo
+            </button>
+            <button class="botoes cancelar" onclick="cancelarDenuncia()">
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/formulario.js"></script>
+    <script src="./assets/js/cancelarDenuncia.js"></script>
+</body>
+
+</html>
